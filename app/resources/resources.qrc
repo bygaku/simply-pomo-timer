@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/icon.png</file>
+        <file>sounds/notify001.wav</file>
+        <file>sounds/notify002.wav</file>
+    </qresource>
+</RCC>
