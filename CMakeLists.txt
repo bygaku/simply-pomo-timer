@@ -21,6 +21,7 @@ option(BUILD_APP "Build the main application." ON)
 set(EXE_NAME "PomodoroTimer")
 set(TEST_NAME "appTest")
 set(TIMER "timer")
+
 add_subdirectory(modules/)
 
 if(BUILD_TESTS)

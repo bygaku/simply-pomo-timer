@@ -77,23 +77,19 @@ Item {
                 text: qsTr("終了");
                 onTriggered: Qt.quit()
             }
+
+            MenuSeparator {
+            }
+
+            MenuItem {
+                text: qsTr("LICENSE");
+                onTriggered: Qt.openUrlExternally("https://www.gnu.org/licenses/lgpl-3.0.html")
+            }
+
+            MenuItem {
+                text: qsTr("QT");
+                onTriggered: Qt.openUrlExternally("https://www.qt.io/licensing/")
+            }
         }
     }
-
-    // Application background.
-    // Item {
-    //     id: transparent_background
-
-    //     z: 0
-    //     anchors.fill: parent
-
-    //     MouseArea {
-    //         anchors.fill: parent
-
-    //         acceptedButtons: Qt.NoButton
-    //         hoverEnabled: false
-    //         propagateComposedEvents: true
-    //         onPressed: mouse.accepted = false; onReleased: mouse.accepted = false; onWheel: wheel.accepted = false
-    //     }
-    // }
 }
